@@ -1,14 +1,11 @@
 echo "Downloading model checkpoints.. (about baselines via MiniLLM github repository)"
-DLINK=$(echo -n "aHR0cHM6Ly9jb252ZXJzYXRpb25odWIuYmxvYi5jb3JlLndpbmRvd3MubmV0L2JlaXQtc2hhcmUtcHVibGljL01pbmlMTE0vZ3B0Mi50YXI/c3Y9MjAyMy0wMS0wMyZzdD0yMDI0LTA0LTEwVDEzJTNBMTElM0E0NFomc2U9MjA1MC0wNC0xMVQxMyUzQTExJTNBMDBaJnNyPWMmc3A9ciZzaWc9NGNYSklqVlJaSElCV3FIalBnRG4lMkYwMW9jenBEV1hpcG1QQ1VrM1o4dmJRJTNE" | base64 --decode)
-wget -O gpt2.tar $DLINK
+wget -O gpt2.tar https://unilm.blob.core.windows.net/minillm/MiniLLM/gpt2.tar
 tar -xvf gpt2.tar
 mv gpt2 checkpoints/
-DLINK=$(echo -n "aHR0cHM6Ly9jb252ZXJzYXRpb25odWIuYmxvYi5jb3JlLndpbmRvd3MubmV0L2JlaXQtc2hhcmUtcHVibGljL01pbmlMTE0vb3B0LnRhcj9zdj0yMDIzLTAxLTAzJnN0PTIwMjQtMDQtMTBUMTMlM0ExMSUzQTQ0WiZzZT0yMDUwLTA0LTExVDEzJTNBMTElM0EwMFomc3I9YyZzcD1yJnNpZz00Y1hKSWpWUlpISUJXcUhqUGdEbiUyRjAxb2N6cERXWGlwbVBDVWszWjh2YlElM0Q=" | base64 --decode)
-wget -O opt.tar $DLINK
+wget -O opt.tar https://unilm.blob.core.windows.net/minillm/MiniLLM/opt.tar
 tar -xvf opt.tar
 mv opt checkpoints/
-DLINK=$(echo -n "aHR0cHM6Ly9jb252ZXJzYXRpb25odWIuYmxvYi5jb3JlLndpbmRvd3MubmV0L2JlaXQtc2hhcmUtcHVibGljL01pbmlMTE0vbGxhbWEudGFyP3N2PTIwMjMtMDEtMDMmc3Q9MjAyNC0wNC0xMFQxMyUzQTExJTNBNDRaJnNlPTIwNTAtMDQtMTFUMTMlM0ExMSUzQTAwWiZzcj1jJnNwPXImc2lnPTRjWEpJalZSWkhJQldxSGpQZ0RuJTJGMDFvY3pwRFdYaXBtUENVazNaOHZiUSUzRA==" | base64 --decode)
-wget -O llama.tar $DLINK
+wget -O llama.tar https://unilm.blob.core.windows.net/minillm/MiniLLM/llama.tar
 tar -xvf llama.tar
 mv llama checkpoints/
 
@@ -48,9 +45,7 @@ huggingface-cli download gmkim/OPT-6.7B-distilled-PromptKD-Dolly-v1.0 --local-di
 huggingface-cli download gmkim/Llama-7B-distilled-PromptKD-Dolly-v1.0 --local-dir checkpoints/llama/train/promptkd/llama-7B
 
 echo "Downloading data for training and evaluation.."
-DLINK=$(echo -n "aHR0cHM6Ly9jb252ZXJzYXRpb25odWIuYmxvYi5jb3JlLndpbmRvd3MubmV0L2JlaXQtc2hhcmUtcHVibGljL01pbmlMTE0vZGF0YS50YXI/c3Y9MjAyMy0wMS0wMyZzdD0yMDI0LTA0LTEwVDEzJTNBMTElM0E0NFomc2U9MjA1MC0wNC0xMVQxMyUzQTExJTNBMDBaJnNyPWMmc3A9ciZzaWc9NGNYSklqVlJaSElCV3FIalBnRG4lMkYwMW9jenBEV1hpcG1QQ1VrM1o4dmJRJTNE" | base64 --decode)
-wget -O data.tar $DLINK
+wget -O data.tar https://unilm.blob.core.windows.net/minillm/MiniLLM/data.tar
 tar -xvf data.tar
-DLINK=$(echo -n "aHR0cHM6Ly9jb252ZXJzYXRpb25odWIuYmxvYi5jb3JlLndpbmRvd3MubmV0L2JlaXQtc2hhcmUtcHVibGljL01pbmlMTE0vcHJvY2Vzc2VkX2RhdGEudGFyP3N2PTIwMjMtMDEtMDMmc3Q9MjAyNC0wNC0xMFQxMyUzQTExJTNBNDRaJnNlPTIwNTAtMDQtMTFUMTMlM0ExMSUzQTAwWiZzcj1jJnNwPXImc2lnPTRjWEpJalZSWkhJQldxSGpQZ0RuJTJGMDFvY3pwRFdYaXBtUENVazNaOHZiUSUzRA==" | base64 --decode)
-wget -O processed_data.tar $DLINK
+wget -O processed_data.tar https://unilm.blob.core.windows.net/minillm/MiniLLM/processed_data.tar
 tar -xvf processed_data.tar
