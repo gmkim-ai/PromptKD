@@ -1,8 +1,9 @@
-# PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning
+# PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning (EMNLP 2024 Findings)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2212.02802-b31b1b.svg)](https://arxiv.org/abs/2402.12842)
 ![Method](./figures/main_figure.png)
 
+## [[Project Page](https://promptkd.github.io/)]
 > **PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning**<br>
 > Gyeongman Kim, Doohyuk Jang, Eunho Yang <br>
 
@@ -80,3 +81,24 @@ python3 tools/convert_mp.py \
 MiniLLM implementation:  
 https://github.com/microsoft/LMOps/tree/main/minillm  
 License (MIT) https://github.com/microsoft/LMOps/blob/main/LICENSE  
+
+
+## Acknowledgement
+```
+This work was supported by Institute for Information & communications Technology Promotion (IITP) grant funded by the Korea government (MSIT)
+(No.RS-2019-II190075, Artificial Intelligence Graduate School Program(KAIST))
+```
+
+
+## Citation
+
+If you make use of our work, please cite our paper:
+
+```
+@inproceedings{kim-etal-2024-promptkd,
+    title     = "PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning",
+    author    = "Kim, Gyeongman and Jang, Doohyuk and Yang, Eunho",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    year      = {2024}
+}
+```
