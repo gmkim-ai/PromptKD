@@ -99,6 +99,6 @@ If you make use of our work, please cite our paper:
     title     = "PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning",
     author    = "Kim, Gyeongman and Jang, Doohyuk and Yang, Eunho",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
-    year      = {2024}
+    year      = "2024"
 }
 ```
