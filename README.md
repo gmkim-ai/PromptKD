@@ -1,4 +1,4 @@
-# PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning (EMNLP 2024 Findings)
+# PromptKD: Distilling Student-Friendly Knowledge for Generative Language Models via Prompt Tuning<br/>(EMNLP 2024 Findings)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2212.02802-b31b1b.svg)](https://arxiv.org/abs/2402.12842)
 ![Method](./figures/main_figure.png)
